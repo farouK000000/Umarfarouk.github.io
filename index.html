@@ -1,24 +1,100 @@
 # Umarfarouk.github.io
 html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Umar Farouk's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Farouk | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-        .intro { background: #f4f4f4; padding: 20px; border-radius: 5px; }
+        /* Modern styling */
+        :root {
+            --primary: #3498db;
+            --dark: #2c3e50;
+            --light: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: var(--light);
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, I'm Umar Farouk</h1>
-    <div class="intro">
-        <p>Welcome to my portfolio website! I'm passionate about [ data analysis ].</p>
-    </div>
-    <h2>My Projects</h2>
-    <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-    </ul>
+    <!-- Header -->
+    <header>
+        <h1>Umar Farouk</h1>
+        <p>Data Analyst | Web Developer | [Undergraduate Student]</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Umar, a passionate [Data analyst] with experience in [R Programming and Stata]. I love solving problems and building impactful projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div>
+            <h3>Project 1</h3>
+            <p>A simple linear regression on food expenditure and income. This is done with the use of r programming.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>A wage data to give us the parameters of a regression model using Stata.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <p>Email: <a href="mailto:Umarabass472@gmail.com">Umarabass472@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/farouK00000" target="_blank">github.com/farouK00000</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Umar Farouk. All rights reserved.</p>
+    </footer>
 </body>
 </html>
